@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/../../../Program Files/Mendix/9.20.0.58427/runtime/bundles/com.mendix.json.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../Program Files/Mendix/9.20.0.58427/runtime/bundles/com.mendix.logging-api.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../Program Files/Mendix/9.20.0.58427/runtime/bundles/com.mendix.m2ee-api.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../Program Files/Mendix/9.20.0.58427/runtime/bundles/com.mendix.public-api.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../Program Files/Mendix/9.20.0.58427/runtime/bundles/javax.servlet.servlet-api.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/../../../Program Files/Mendix/9.20.0.58427/runtime/bundles/javax.websocket.websocket-api.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/userlib/accessors-smart-2.4.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/userlib/asm-9.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/userlib/commons-lang3-3.12.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/userlib/commons-text-1.10.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/userlib/content-type-2.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/userlib/jcip-annotations-1.0-1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/userlib/jnats-2.15.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/userlib/json-smart-2.4.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/userlib/lang-tag-1.7.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/userlib/nimbus-jose-jwt-9.23.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/userlib/oauth2-oidc-sdk-9.39.jar!/" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/javasource" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/deployment/run/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/javasource" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="11" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="com.mendix.json.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../Program Files/Mendix/9.20.0.58427/runtime/bundles/com.mendix.json.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="com.mendix.logging-api.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../Program Files/Mendix/9.20.0.58427/runtime/bundles/com.mendix.logging-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="com.mendix.m2ee-api.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../Program Files/Mendix/9.20.0.58427/runtime/bundles/com.mendix.m2ee-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="com.mendix.public-api.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../Program Files/Mendix/9.20.0.58427/runtime/bundles/com.mendix.public-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javax.servlet.servlet-api.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../Program Files/Mendix/9.20.0.58427/runtime/bundles/javax.servlet.servlet-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javax.websocket.websocket-api.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../Program Files/Mendix/9.20.0.58427/runtime/bundles/javax.websocket.websocket-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="accessors-smart-2.4.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/userlib/accessors-smart-2.4.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="asm-9.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/userlib/asm-9.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-lang3-3.12.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/userlib/commons-lang3-3.12.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-text-1.10.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/userlib/commons-text-1.10.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="content-type-2.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/userlib/content-type-2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jcip-annotations-1.0-1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/userlib/jcip-annotations-1.0-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jnats-2.15.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/userlib/jnats-2.15.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="json-smart-2.4.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/userlib/json-smart-2.4.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="lang-tag-1.7.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/userlib/lang-tag-1.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="nimbus-jose-jwt-9.23.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/userlib/nimbus-jose-jwt-9.23.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="oauth2-oidc-sdk-9.39.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/userlib/oauth2-oidc-sdk-9.39.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
