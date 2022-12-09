@@ -1,0 +1,16 @@
+Buildfile: C:\nats\nats-mendix\NATS-Connector-main\deployment\build_core.xml
+
+compile:
+    [javac] Compiling 120 source files to C:\nats\nats-mendix\NATS-Connector-main\deployment\run\bin
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+package:
+      [jar] Building jar: C:\nats\nats-mendix\NATS-Connector-main\deployment\model\bundles\project.jar
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+
+

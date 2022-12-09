@@ -23,6 +23,9 @@ public class UserActionsRegistrar
     registrator.registerUserAction(mendixsso.actions.LoadStringValueFromEnvOrDefault.class);
     registrator.registerUserAction(mendixsso.actions.LogOutUser.class);
     registrator.registerUserAction(mendixsso.actions.StartSignOnServlet.class);
+    registrator.registerUserAction(natsconnectormodule.actions.CloseConnection.class);
+    registrator.registerUserAction(natsconnectormodule.actions.Connect.class);
+    registrator.registerUserAction(natsconnectormodule.actions.ManageGetSubjects.class);
     registrator.registerUserAction(system.actions.VerifyPassword.class);
   }
 }
