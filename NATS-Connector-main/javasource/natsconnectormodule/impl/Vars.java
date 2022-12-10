@@ -17,10 +17,13 @@ public class Vars {
         return connections.get(connectionId);
     }
 
-    public static void closeConn(String connectionId) throws InterruptedException {
+    public static boolean closeConn(String connectionId) throws InterruptedException {
         Connection c = connections.remove(connectionId);
-        if (c != null) {
-            c.close();
+        if (c == null) {
+            return false;
         }
+
+        c.close();
+        return true;
     }
 }

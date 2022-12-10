@@ -21,18 +21,13 @@ public class Microflows
 	public Microflows() {}
 
 	// These are the microflows for the NatsConnectorModule module
-	public static void flowConnect(IContext context)
-	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		Core.microflowCall("NatsConnectorModule.FlowConnect").withParams(params).execute(context);
-	}
-	public static java.util.List<natsconnectormodule.proxies.StringWrapper> flowManageGetSubjects(IContext context, java.lang.String _connectionId, java.lang.String _stream, java.lang.String _subjectFilter)
+	public static java.util.List<natsconnectormodule.proxies.StringWrapper> natsFlowManageGetSubjects(IContext context, java.lang.String _connectionId, java.lang.String _stream, java.lang.String _subjectFilter)
 	{
 		Map<java.lang.String, Object> params = new HashMap<>();
 		params.put("connectionId", _connectionId);
 		params.put("stream", _stream);
 		params.put("subjectFilter", _subjectFilter);
-		java.util.List<IMendixObject> objs = Core.microflowCall("NatsConnectorModule.FlowManageGetSubjects").withParams(params).execute(context);
+		java.util.List<IMendixObject> objs = Core.microflowCall("NatsConnectorModule.NatsFlowManageGetSubjects").withParams(params).execute(context);
 		if (objs == null) {
 			return null;
 		} else {
@@ -40,5 +35,15 @@ public class Microflows
 				.map(obj -> natsconnectormodule.proxies.StringWrapper.initialize(context, obj))
 				.collect(java.util.stream.Collectors.toList());
 		}
+	}
+	public static void userFlowCloseConnection(IContext context)
+	{
+		Map<java.lang.String, Object> params = new HashMap<>();
+		Core.microflowCall("NatsConnectorModule.UserFlowCloseConnection").withParams(params).execute(context);
+	}
+	public static java.lang.String userFlowConnect(IContext context)
+	{
+		Map<java.lang.String, Object> params = new HashMap<>();
+		return (java.lang.String) Core.microflowCall("NatsConnectorModule.UserFlowConnect").withParams(params).execute(context);
 	}
 }

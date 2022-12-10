@@ -20,9 +20,11 @@ public class ConnectionOptions
 	 */
 	public enum MemberNames
 	{
+		ConnectionId("ConnectionId"),
 		Server("Server"),
 		ConnectionTimeoutMillis("ConnectionTimeoutMillis"),
-		Credentials("Credentials");
+		Credentials("Credentials"),
+		MaxReconnects("MaxReconnects");
 
 		private final java.lang.String metaName;
 
@@ -116,6 +118,42 @@ public class ConnectionOptions
 	{
 		com.mendix.core.Core.delete(context, getMendixObject());
 	}
+	/**
+	 * @return value of ConnectionId
+	 */
+	public final java.lang.String getConnectionId()
+	{
+		return getConnectionId(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ConnectionId
+	 */
+	public final java.lang.String getConnectionId(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.ConnectionId.toString());
+	}
+
+	/**
+	 * Set value of ConnectionId
+	 * @param connectionid
+	 */
+	public final void setConnectionId(java.lang.String connectionid)
+	{
+		setConnectionId(getContext(), connectionid);
+	}
+
+	/**
+	 * Set value of ConnectionId
+	 * @param context
+	 * @param connectionid
+	 */
+	public final void setConnectionId(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String connectionid)
+	{
+		getMendixObject().setValue(context, MemberNames.ConnectionId.toString(), connectionid);
+	}
+
 	/**
 	 * @return value of Server
 	 */
@@ -222,6 +260,42 @@ public class ConnectionOptions
 	public final void setCredentials(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String credentials)
 	{
 		getMendixObject().setValue(context, MemberNames.Credentials.toString(), credentials);
+	}
+
+	/**
+	 * @return value of MaxReconnects
+	 */
+	public final java.lang.Integer getMaxReconnects()
+	{
+		return getMaxReconnects(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of MaxReconnects
+	 */
+	public final java.lang.Integer getMaxReconnects(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.MaxReconnects.toString());
+	}
+
+	/**
+	 * Set value of MaxReconnects
+	 * @param maxreconnects
+	 */
+	public final void setMaxReconnects(java.lang.Integer maxreconnects)
+	{
+		setMaxReconnects(getContext(), maxreconnects);
+	}
+
+	/**
+	 * Set value of MaxReconnects
+	 * @param context
+	 * @param maxreconnects
+	 */
+	public final void setMaxReconnects(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer maxreconnects)
+	{
+		getMendixObject().setValue(context, MemberNames.MaxReconnects.toString(), maxreconnects);
 	}
 
 	/**

@@ -24,13 +24,13 @@ import java.util.Collections;
 import java.util.List;
 import static natsconnectormodule.impl.Utils.toJson;
 
-public class ManageGetSubjects extends CustomJavaAction<java.lang.String>
+public class ActionManageGetSubjects extends CustomJavaAction<java.lang.String>
 {
 	private java.lang.String connectionId;
 	private java.lang.String stream;
 	private java.lang.String subjectFilter;
 
-	public ManageGetSubjects(IContext context, java.lang.String connectionId, java.lang.String stream, java.lang.String subjectFilter)
+	public ActionManageGetSubjects(IContext context, java.lang.String connectionId, java.lang.String stream, java.lang.String subjectFilter)
 	{
 		super(context);
 		this.connectionId = connectionId;
@@ -71,7 +71,7 @@ public class ManageGetSubjects extends CustomJavaAction<java.lang.String>
 	@java.lang.Override
 	public java.lang.String toString()
 	{
-		return "ManageGetSubjects";
+		return "ActionManageGetSubjects";
 	}
 
 	// BEGIN EXTRA CODE

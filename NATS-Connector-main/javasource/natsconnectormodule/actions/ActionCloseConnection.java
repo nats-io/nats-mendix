@@ -15,11 +15,11 @@ import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 import natsconnectormodule.impl.Vars;
 
-public class CloseConnection extends CustomJavaAction<java.lang.Boolean>
+public class ActionCloseConnection extends CustomJavaAction<java.lang.Boolean>
 {
 	private java.lang.String connectionId;
 
-	public CloseConnection(IContext context, java.lang.String connectionId)
+	public ActionCloseConnection(IContext context, java.lang.String connectionId)
 	{
 		super(context);
 		this.connectionId = connectionId;
@@ -30,8 +30,12 @@ public class CloseConnection extends CustomJavaAction<java.lang.Boolean>
 	{
 		// BEGIN USER CODE
 		ILogNode logger = Core.getLogger(getClass().getSimpleName());
-		Vars.closeConn(connectionId);
-		logger.info("Connection closed");
+		if (Vars.closeConn(connectionId)) {
+			logger.info("Connection closed. [" + connectionId + "]");
+		}
+		else {
+			logger.warn("Connection not found. [" + connectionId + "]");
+		}
 		return true;
 		// END USER CODE
 	}
@@ -43,7 +47,7 @@ public class CloseConnection extends CustomJavaAction<java.lang.Boolean>
 	@java.lang.Override
 	public java.lang.String toString()
 	{
-		return "CloseConnection";
+		return "ActionCloseConnection";
 	}
 
 	// BEGIN EXTRA CODE

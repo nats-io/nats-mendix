@@ -21,12 +21,12 @@ import java.time.Duration;
 import static io.nats.client.support.Validator.emptyOrNullAs;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 
-public class Connect extends CustomJavaAction<java.lang.String>
+public class ActionConnect extends CustomJavaAction<java.lang.String>
 {
 	private IMendixObject __connectionOptions;
 	private natsconnectormodule.proxies.ConnectionOptions connectionOptions;
 
-	public Connect(IContext context, IMendixObject connectionOptions)
+	public ActionConnect(IContext context, IMendixObject connectionOptions)
 	{
 		super(context);
 		this.__connectionOptions = connectionOptions;
@@ -42,7 +42,6 @@ public class Connect extends CustomJavaAction<java.lang.String>
 
 		ErrorListener el = new ErrorListenerMendixLogging();
 
-
 		String optServer = emptyOrNullAs(connectionOptions.getServer(), Options.DEFAULT_URL);
 		Long connectionTimeoutMillis = connectionOptions.getConnectionTimeoutMillis();
 		Duration optTimeout = connectionTimeoutMillis == null || connectionTimeoutMillis < Options.DEFAULT_CONNECTION_TIMEOUT.toMillis()
@@ -52,10 +51,11 @@ public class Connect extends CustomJavaAction<java.lang.String>
 			.server(optServer)
 			.connectionTimeout(optTimeout)
 			.errorListener(el)
+			.maxReconnects(connectionOptions.getMaxReconnects())
 			.build();
 
 		Connection conn = Nats.connect(options);
-		String connectionId = NUID.nextGlobal();
+		String connectionId = connectionOptions.getConnectionId();
 		Vars.put(connectionId, conn);
 		logger.info(conn.getServerInfo());
 		
@@ -70,7 +70,7 @@ public class Connect extends CustomJavaAction<java.lang.String>
 	@java.lang.Override
 	public java.lang.String toString()
 	{
-		return "Connect";
+		return "ActionConnect";
 	}
 
 	// BEGIN EXTRA CODE

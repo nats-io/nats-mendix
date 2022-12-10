@@ -11,6 +11,6 @@ package:
       [jar] Building jar: C:\nats\nats-mendix\NATS-Connector-main\deployment\model\bundles\project.jar
 
 BUILD SUCCESSFUL
-Total time: 5 seconds
+Total time: 3 seconds
 
 
